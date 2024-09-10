@@ -14,14 +14,12 @@ struct SectionHeaderView: View {
     var body: some View {
         HStack {
             Text(title)
-                .font(.headline)
+                .font(.title2)
             Spacer()
             Button(action: {
-                // View all action
             }) {
                 Text("View all")
                     .font(.subheadline)
-                    .foregroundColor(.blue)
             }
         }
         .padding(.horizontal)

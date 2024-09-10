@@ -26,7 +26,7 @@ struct SwiftShopApp: App {
             let viewModel = MainViewModel(context: persistentContainer.viewContext)
             
             // Pass the view model to MainView
-            MainView(viewModel: viewModel)
+            CustomTabView(viewModel: viewModel)
                 .environment(\.managedObjectContext, persistentContainer.viewContext)
         }
     }
