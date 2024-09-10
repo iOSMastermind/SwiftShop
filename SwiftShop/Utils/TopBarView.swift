@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct TopBarView: View {
+    @State var text: String = ""
     var body: some View {
         HStack {
             Button(action: {
@@ -20,10 +21,11 @@ struct TopBarView: View {
             Spacer()
             
             HStack {
+                TextField("Search", text: $text)
+                    .foregroundColor(.gray)
                 Image(systemName: "magnifyingglass")
                     .foregroundColor(.gray)
-                Text("Search")
-                    .foregroundColor(.gray)
+                
                 Spacer()
             }
             .padding(.vertical, 8)
