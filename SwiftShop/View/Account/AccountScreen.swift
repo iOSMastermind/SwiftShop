@@ -8,12 +8,12 @@
 import SwiftUI
 
 
-struct                     AccountScren: View {
+struct AccountScreen: View {
     var body: some View {
         Text("Account Screen")
     }
 }
 
 #Preview {
-                        AccountScren()
+    AccountScreen()
 }
