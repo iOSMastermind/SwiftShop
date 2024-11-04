@@ -17,7 +17,7 @@ struct CustomTabView: View {
                 case 3:
                     OffersScreen()
                 case 4:
-                                        AccountScren()
+                    AccountScreen()
                 default:
                     EmptyView()
                 }
